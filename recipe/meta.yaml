@@ -1,6 +1,6 @@
 {% set name = "LSSTDESC.Coord" %}
-{% set version = "1.0.5" %}
-{% set sha256 = "fca209035123683cc666aa20d01ea5f67b31f370f2f5195af8a7e8db8bda484f" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "9bc61546e261edd4eb434e8d58b7be1c2a6729b41e9c65278128458a210bd7d0" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [win]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
