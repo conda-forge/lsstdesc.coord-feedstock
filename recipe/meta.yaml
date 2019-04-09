@@ -1,6 +1,6 @@
 {% set name = "LSSTDESC.Coord" %}
-{% set version = "1.1.0" %}
-{% set sha256 = "9bc61546e261edd4eb434e8d58b7be1c2a6729b41e9c65278128458a210bd7d0" %}
+{% set version = "1.1.1" %}
+{% set sha256 = "e375ec6414769cafd99a442b192ecbed273c60db596c2cd61f4df0dfc50d6f46" %}
 
 package:
   name: {{ name|lower }}
