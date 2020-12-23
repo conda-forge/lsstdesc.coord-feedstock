@@ -11,3 +11,5 @@ sincos = theta1.sincos()
 assert np.allclose(
     sincos,
     [np.sin(12.0 / 180.0 * np.pi), np.cos(12.0 / 180.0 * np.pi)])
+
+print("\n\nRAN TEST FILE\n\n", flush=True)
