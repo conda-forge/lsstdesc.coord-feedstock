@@ -18,8 +18,7 @@ build:
 outputs:
   - name: {{ name|lower }}
     version: {{ version }}
-    build:
-      script: $PYTHON -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv
+    script: build_pkg.sh
     requirements:
       build:
         - python                                 # [build_platform != target_platform]
