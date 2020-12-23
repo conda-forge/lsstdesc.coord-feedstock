@@ -31,13 +31,11 @@ outputs:
         - setuptools
         - pip
         - cffi
-
       run:
         - python
         - numpy
         - future
         - cffi
-
     test:
       files:
         - tests.py
