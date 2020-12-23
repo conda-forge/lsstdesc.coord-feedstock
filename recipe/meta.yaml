@@ -44,7 +44,7 @@ outputs:
       imports:
         - coord
       commands:
-        - {{ python }} run_test.py
+        - $PYTHON run_test.py
 
   - name: {{ name|replace('.', '-')|lower }}
     version: {{ version }}
@@ -60,7 +60,7 @@ outputs:
       imports:
         - coord
       commands:
-        - {{ python }} run_test.py
+        - $PYTHON run_test.py
 
 about:
   home: https://github.com/LSSTDESC/Coord
