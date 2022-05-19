@@ -1,6 +1,6 @@
 {% set name = "LSSTDESC.Coord" %}
-{% set version = "1.2.2" %}
-{% set sha256 = "91507bb540f4cc4d00c8428bd5ea2ea60f16a36e65930881aec639839ed73dac" %}
+{% set version = "1.2.3" %}
+{% set sha256 = "943115a155d876b03cbd7a5f6410dcab24c3c0ed631e64b133229d4cebc13492" %}
 
 package:
   name: {{ name|lower }}-split
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: true  # [win]
 
 outputs:
