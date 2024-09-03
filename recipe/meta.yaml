@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 2
   skip: true  # [win]
 
 outputs:
@@ -25,6 +25,7 @@ outputs:
         - cross-python_{{ target_platform }}     # [build_platform != target_platform]
         - cffi                                   # [build_platform != target_platform]
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
       host:
         - python
         - setuptools
