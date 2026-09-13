@@ -8,11 +8,11 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/lsstdesc_coord-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0]|lower }}/{{ name|lower }}/lsstdesc_coord-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 outputs:
